@@ -4,7 +4,7 @@ function CreateUser() {
 const [newUser,setNewUser]=useState({name:"",batch:"B43WD",email:"",Exp:""})
   return (
     <div className='userEdit-content'>
-    <div>EditUser</div>
+    <h1>Create-User</h1>
     <div >
         <div className='user-edit'>
             <input type='text' placeholder='Name'

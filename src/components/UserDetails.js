@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
-import {data} from '../data'
+import {userData} from '../data/data'
 import {useNavigate} from 'react-router-dom'
 function UserDetails() {
     const navigate=useNavigate()
-    const [users,setUsers]=useState(data)
+    const [users,setUsers]=useState(userData)
     return (
     <div>
           <h1>UserDetails</h1>
@@ -20,6 +20,9 @@ function UserDetails() {
                     navigate('/editUser',{state:user})
                 }}
                 >Edit</button>
+                <button onClick={()=>{
+                    navigate('/userPage',{state:user})
+                }}>View</button>
                 <button>Delete</button>
                 </div>
             </div>

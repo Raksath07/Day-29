@@ -1,0 +1,22 @@
+export const teacherData=[
+    {
+        id:1,
+        name:"xyz",
+        email:"xyz@gmail.com",
+    },
+    {
+        id:2,
+        name:"xyz",
+        email:"xyz@gmail.com",
+    },
+    {
+        id:3,
+        name:"xyz",
+        email:"xyz@gmail.com",
+    },
+    {
+        id:5,
+        name:"xyz",
+        email:"xyz@gmail.com",
+    }
+]

@@ -1,6 +1,7 @@
 import React from 'react'
-import {useLocation} from 'react-router-dom'
+import {useLocation,useNavigate} from 'react-router-dom'
 function EditUser() {
+  const navigate=useNavigate()
     const location=useLocation()
     const userData=location.state
   return (
@@ -10,8 +11,9 @@ function EditUser() {
         <div className='user-edit'>
             <input type='text' placeholder='Name' value={userData.name}/>
             <input type='email' placeholder='Email' value={userData.email}/>
-            <input type='number' placeholder='Experience' value={userData.Exp}/>
-            <button>Done</button>
+            {userData.Exp!==undefined && 
+            (<input type='number' placeholder='Experience' value={userData.Exp}/>)}
+            <button onClick={()=>{navigate('/')}}>Done</button>
         </div>
     </div>
     </div>
