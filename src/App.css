@@ -1,38 +1,204 @@
 .App {
   text-align: center;
+  opacity: 1;
+}
+body{
+  width: 100%;
+  background-color: #5cdb95;
+}
+*{
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+*::-webkit-scrollbar{
+  display: none;
+}
+.title{
+padding : 12px;
+font-size : 25px;
+font-weight: bolder;
+font-style:normal;
+width: 100%;
+font-family :Arial, Helvetica, sans-serif;
+background-color: #05386b;
+color: #edf5e1;
+}
+.nav-styles{
+  padding : 12px;
+  width : 100%;
+  color: #05386b;
+  background-color: #379683;
+  display: flex;
+  justify-content: flex-start;
+}
+.nav-buttons{
+  margin-left: 5px;
+  border: 1px solid white;
+  color: white;
+  padding : 12px;
+  border-radius : 5px;
+  background-color: inherit;
+}
+.nav-buttons:hover{
+  background-color: black;
+  /* border: none; */
+}
+.view-btn:hover{
+ background-color: yellowgreen;
+ color : white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer{
+
+  padding: 17px;
+  font-size: larger;
+  font-weight: bolder;
+  width : 100%;
+  background-color: #05386b;
+  color: #edf5e1;
+}
+.user-content{
+margin : 18px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 1rem;
+
+}
+.user-card{
+  background-color: #379683;
+  color: #05386b;
+  border-radius : 5px;
+  width : 250px;
+  height : 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.teacher-card{
+  background-color: #379683;
+  color: #05386b;
+  border-radius : 5px;
+  width : 250px;
+  height : 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.teacher-card h1{
+  margin-top: 25px;
+}
+.btn{
+  padding: 10px;
+  margin : 5px;
+  border : none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size : 12px;
+}
+.edit-btn:hover{
+  background-color: blueviolet;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.del-btn:hover{
+  background-color: crimson;
+  color : white;
+ }
+ .childred{
+  background-color: #5cdb95;
+  overflow: scroll;
+  height : 100vh;
+  margin: 1vh;
+  display : flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+ .childred::-webkit-scrollbar{
+  display: none;
+ }
+ .dashboard{
+  display: flex;
+  flex-direction: coloumn;
+ }
+ .side-bar{
+  border: 1px solid red;
+  height:  100vh;
+  width : 15%;
+  background-color:  blue;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .main-content{
+  background-color: red;
+  height: 100vh;
+  width : 85%;
+ }
+ .text-areas{
+    display: flex;
+    flex-direction: column;
+    gap : 0.5rem;
+    margin : 12px;
+ }
+
+ .addUser{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+ }
+
+ .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.form {
+  margin-right: 10px;
+  width: 70%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.form input {
+  display: block;
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form button{
+  display: block;
+  width: 100%;
+  /* padding: 10px; */
+  font-size: 16px;
+  background-color: #4caf50;
+  padding: 20px;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editButton{
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+  margin-right: 10px;
+  width: 400px;
+  /* padding: 10px; */
+  font-size: 16px;
+  background-color: #4caf50;
+  padding: 20px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
